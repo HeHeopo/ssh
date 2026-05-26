@@ -7,21 +7,21 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-find_package(ament_cmake_python REQUIRED)
+# find_package(ament_cmake_python REQUIRED)
 
-ament_python_install_package(${PROJECT_NAME})
+# ament_python_install_package(${PROJECT_NAME})
 
 install(
-  DIRECTORY launch urdf config rviz meshes
+  DIRECTORY launch urdf meshes
   DESTINATION share/${PROJECT_NAME}
 )
 
-install(
-  PROGRAMS
-    scripts/aruco_detect
-    scripts/set_initial_pose
-  DESTINATION lib/${PROJECT_NAME}
-)
+# install(
+#   PROGRAMS
+#     scripts/aruco_detect
+#     scripts/set_initial_pose
+#   DESTINATION lib/${PROJECT_NAME}
+# )
 
 
 if(BUILD_TESTING)
