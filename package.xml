@@ -25,7 +25,7 @@
   <depend>nav2_bringup</depend>
   <depend>rviz2</depend>
   <depend>launch_ros</depend>
-  <depend>ament_index_python</depend>
+  <!-- <depend>ament_index_python</depend> -->
 
   <export>
     <build_type>ament_cmake</build_type>
